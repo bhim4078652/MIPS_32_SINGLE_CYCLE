@@ -14,7 +14,7 @@
 - The roles of the control signals.
 - Datapath and Controlpath.
 
-#### Clocking
+## Clocking :
 There are two kinds of logic circuitry: combinational logic and state elements. State elements retain information for the duration of a CPU cycle. During the clock cycle combinational logic generates new values for the state elements. These values are not captured by the state elements until the end of a cycle.
 
 #### Combinational logic
@@ -33,3 +33,6 @@ There are two kinds of logic circuitry: combinational logic and state elements. 
 
 #### Clock Time
 The clock time, one of the three factors in the performance equation, is set to be greater than the combinational gate delays plus any setup time required for state elements. The setup time is usually small compared to the combinational gate delays.
+
+
+## ALU OPERATION :
