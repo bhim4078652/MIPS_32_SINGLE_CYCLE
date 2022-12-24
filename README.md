@@ -36,3 +36,12 @@ The clock time, one of the three factors in the performance equation, is set to 
 
 
 ## ALU OPERATION :
+The ALU can be used in three different ways:
+
+- It performs the arithmetic or logical operation specified by the instruction mnemonic. This is how it is used for all arithmetic and logical instructions.
+- It does a subtraction in order to compare two numbers. This is how it is used for branches and compare instructions.
+- It calculates a memory address by adding a register and the sign-extended immediate field. This is how it is used for memory loads and stores.
+
+The main control block only decodes the opcode bits of the instruction. When these bits are not all 0 the ALUOp signal from the main control block specifies the ALU operation and this signal is passed to the ALU without modification.
+
+When the opcode bits are 000000 it indicates that the instruction is an R-type instruction. Then the function (fn) bits specify the operation performed by the ALU. The ALUOp signal is then just a special code that indicates that the ALU Control block should determine the ALU operation from the function bits.
