@@ -53,3 +53,19 @@ When the opcode bits are 000000 it indicates that the instruction is an R-type i
 ![App Screenshot](https://github.com/bhim4078652/MIPS_32_SINGLE_CYCLE/blob/main/images_req/ALU2.jpg)
 
 ![App Screenshot](https://github.com/bhim4078652/MIPS_32_SINGLE_CYCLE/blob/main/images_req/ALU3.jpg)
+
+## MIPS Instruction Types
+
+When MIPS instructions are classified according to coding format, they fall into four categories: R-type, I-type, J-type, and coprocessor. The coprocessor instructions are not considered here.
+
+The classification below refines the classification according to coding format, taking into account the way that the various instruction fields are used in the instruction. The details of the execution activities and the required control signal values depend almost entirely on the instruction type in this classification.
+
+- Non-Jump R-Type
+- Immediate Arithmetic and Logic
+- Branch
+- Load
+- Store
+- Non-Register Jump
+- Register Jump
+
+further details about MIPS instruction class can be found [here] (https://www.d.umn.edu/~gshute/mips/single-cycle-summary.pdf) .
