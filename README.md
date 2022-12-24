@@ -45,3 +45,11 @@ The ALU can be used in three different ways:
 The main control block only decodes the opcode bits of the instruction. When these bits are not all 0 the ALUOp signal from the main control block specifies the ALU operation and this signal is passed to the ALU without modification.
 
 When the opcode bits are 000000 it indicates that the instruction is an R-type instruction. Then the function (fn) bits specify the operation performed by the ALU. The ALUOp signal is then just a special code that indicates that the ALU Control block should determine the ALU operation from the function bits.
+
+### ALU control
+
+![App Screenshot](https://github.com/bhim4078652/MIPS_32_SINGLE_CYCLE/blob/main/images_req/ALU1.jpg)
+
+![App Screenshot](https://github.com/bhim4078652/MIPS_32_SINGLE_CYCLE/blob/main/images_req/ALU2.jpg)
+
+![App Screenshot](https://github.com/bhim4078652/MIPS_32_SINGLE_CYCLE/blob/main/images_req/ALU3.jpg)
