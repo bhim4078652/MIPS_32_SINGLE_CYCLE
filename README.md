@@ -99,3 +99,5 @@ We can think of a load instruction as operating in five steps.
 - 5) The data from the memory unit is written into the register file; the register destination is given by bits 20:16 of the instruction ($t1).
 
 ![App Screenshot](https://github.com/bhim4078652/MIPS_32_SINGLE_CYCLE/blob/main/images_req/LW.jpg).
+
+### Why single cycle implementation is not used today 🤔🤔
