@@ -68,4 +68,4 @@ The classification below refines the classification according to coding format, 
 - Non-Register Jump
 - Register Jump
 
-further details about MIPS instruction class can be found [here] (https://www.d.umn.edu/~gshute/mips/single-cycle-summary.pdf) 
+further details about MIPS instruction class can be found [here] (https://www.d.umn.edu/~gshute/mips/single-cycle-summary.pdf/) 
