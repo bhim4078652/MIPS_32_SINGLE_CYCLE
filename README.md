@@ -87,3 +87,15 @@ The control signals are grouped according to the following instruction execution
 
 ### deriving the ALU operation using ALU_OP and FUNCTION field of instruction.
 ![App Screenshot](https://github.com/bhim4078652/MIPS_32_SINGLE_CYCLE/blob/main/images_req/CONTROL3.jpg)
+
+
+## EXCEUTION OF lw $t1, offset($t2) :
+We can think of a load instruction as operating in five steps.
+
+- 1) An instruction is fetched from the instruction memory, and the PC is incremented. 
+- 2) A register ($t2) value is read from the register file.
+- 3) The ALU computes the sum of the value read from the register file and the sign-extended, lower 16 bits of the instruction (offset).
+- 4) The sum from the ALU is used as the address for the data memory.
+- 5) The data from the memory unit is written into the register file; the register destination is given by bits 20:16 of the instruction ($t1).
+
+![App Screenshot](https://github.com/bhim4078652/MIPS_32_SINGLE_CYCLE/blob/main/images_req/LW.jpg).
