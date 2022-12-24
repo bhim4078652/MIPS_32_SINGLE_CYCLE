@@ -69,3 +69,21 @@ The classification below refines the classification according to coding format, 
 - Register Jump
 
 further details about MIPS instruction class can be found [here](https://www.d.umn.edu/~gshute/mips/single-cycle-summary.pdf). 
+
+## CONTROL SIGNALS :
+The control signals are grouped according to the following instruction execution activities.
+
+- Instruction fetch.
+- PC update.
+- Instruction decode.
+- Source operand fetch.
+- ALU operation.
+- Memory access.
+- Register write.
+
+![App Screenshot](https://github.com/bhim4078652/MIPS_32_SINGLE_CYCLE/blob/main/images_req/CONTROL1.jpg)
+
+![App Screenshot](https://github.com/bhim4078652/MIPS_32_SINGLE_CYCLE/blob/main/images_req/CONTROL2.jpg)
+
+### deriving the ALU operation using ALU_OP and FUNCTION field of instruction.
+![App Screenshot](https://github.com/bhim4078652/MIPS_32_SINGLE_CYCLE/blob/main/images_req/CONTROL3.jpg)
